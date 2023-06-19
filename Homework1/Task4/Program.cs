@@ -16,22 +16,21 @@ string? numberStringThree = Console.ReadLine();
 
 int numberIntOne = Convert.ToInt32(numberStringOne);
 int numberIntTwo = Convert.ToInt32(numberStringTwo);
-int numberIntThree = Convert.ToInt32(numberIntThree);
+int numberIntThree = Convert.ToInt32(numberStringThree);
+int max = numberIntOne;
 
-If(numberIntOne > numberIntTwo; numberIntOne > numberIntThree)
+if(numberIntOne > numberIntTwo)
 {
-    Console.WriteLine ("Максимальное число:");
-    Console.WriteLine (numberIntOne);
-}
-if(numberIntTwo > numberIntThree; numberIntTwo > numberIntOne)
-{
-    Console.WriteLine ("Максимальное число:");
-    Console.WriteLine (numberIntTwo);
-}
-if(numberIntThree > numberIntOne; numberIntThree > numberIntTwo)
-{
-    Console.WriteLine ("Максимальное число:");
-    Console.WriteLine (numberIntThree);
+    Console.WriteLine (max = numberIntOne);
 }
 
-
+if(numberIntTwo > numberIntOne)
+{
+    Console.WriteLine (max = numberIntTwo);
+}
+if(numberIntThree > numberIntTwo)
+{
+    Console.WriteLine (max = numberIntThree);
+}
+    Console.WriteLine ("Максимальное число:");
+    Console.WriteLine (max);
