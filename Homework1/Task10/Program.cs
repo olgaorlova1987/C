@@ -3,10 +3,10 @@
 // 782 -> 8
 // 918 -> 1
 
-Console.WriteLine("Введите трехзначное число от 0 до 1000:");
+Console.WriteLine("Введите число:");
 string? numberStringOne = Console.ReadLine();
 
 int numberIntOne = Convert.ToInt32(numberStringOne);
 
-int midDigit = (numberIntOne/10) % 10;
+int secondDigit = (numberIntOne/10) % 10;
 Console.WriteLine(midDigit);
